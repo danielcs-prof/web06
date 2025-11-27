@@ -73,7 +73,7 @@ export const UsuarioForm = (
                             <Button 
                                     type="submit" 
                                     value={usuario ? "Atualizar" : "Salvar"} 
-                                    variant="primary" 
+                                    variant={usuario ? "success" : "primary" }
                                     onClick={() => {onSave(usuarioState); limparFormulario();}} 
                             />
                         </div>

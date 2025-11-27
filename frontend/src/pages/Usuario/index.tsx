@@ -23,7 +23,7 @@ export const UsuarioPage = () => {
             }).catch(error => {
                 console.error("Erro ao atualizar usuário:", error);
             });
-        } else {
+        } else if(usuario.nome !== "" && usuario.cpf !== "") {
             // Cria um novo usuário
             const novoUsuarioComId = { ...usuario, id: uuidv4() };
             UsuariosService.create(novoUsuarioComId).then(novoUsuarioSalvo => {
