@@ -3,7 +3,7 @@ import { UsuarioList } from "./UsuarioList"
 import type { IUsuario } from "../../models/IUsuario"
 import { useEffect, useState } from "react"
 import { v4 as uuidv4 } from 'uuid';
-import { UsuariosService } from "../../services"
+import { UsuariosService } from "../../services/usuarioService"
 
 
 export const UsuarioPage = () => {
