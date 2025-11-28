@@ -55,8 +55,8 @@ export const UsuarioForm = (
                                             onChange={(e) => setUsuarioState({...usuarioState, cpf: e.target.value})} value={usuarioState.cpf} 
                                     />
                                 </div>
-                                
                             </form>
+                            
                         </div>
                     </div>
                     <hr className="m-3"/>
